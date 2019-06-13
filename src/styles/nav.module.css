@@ -1,0 +1,10 @@
+.nav {
+  background: rebeccapurple;
+  text-align: center;
+}
+
+.link {
+  color: white;
+  padding: 40px;
+  text-decoration: none;
+}
