@@ -1,25 +1,38 @@
 import React from "react"
-
-import Layout from "../components/layout"
-import Image from "../components/image"
+import Header from "../components/header"
 import SEO from "../components/seo"
+import "semantic-ui-css/semantic.min.css"
+
+/* const IndexWrapper = styled.section`
+  margin: 5rem 5rem;
+
+  div {
+    max-width: 300px;
+    margin: 0 auto;
+    display: block;
+  }
+` */
 
 const IndexPage = () => (
-  <Layout>
+  <div>
+    <Header />
+
     <SEO title="Home" />
-    <div style={{ maxWidth: `300px`, margin: `0 auto`, display: `block` }}>
-      <Image />
-    </div>
-    <h2>Hello world, my name is Daphne!</h2>
-    <p>
-      I'm a passionate front-end web developer originally from New York City.
-    </p>
-    <p>
-      In my free time, I enjoy traveling to new countries and participating in
-      tech conferences and hackathons.
-    </p>
-    <p>I speak English and conversational Spanish.</p>
-  </Layout>
+
+    {/*  <Image />
+
+      <h1>About Me</h1>
+      <p>
+        I'm a passionate front-end web developer originally from New York City.
+        <br />I enjoy participating in local hackathons and learning new things
+        at tech conferences around the world.
+      </p>
+      <p>
+        In my free time, I love to travel. Interact with the map below to learn
+        countries and participating in tech conferences and hackathons.
+      </p>
+      <p>I speak English and conversational Spanish. </p> */}
+  </div>
 )
 
 export default IndexPage
