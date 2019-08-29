@@ -1,39 +1,64 @@
+import { graphql, useStaticQuery } from "gatsby"
 import React from "react"
-import Header from "../components/header"
-import SEO from "../components/seo"
+import SocialHeader from "../components/socialheader"
+import Menu from "../components/menu"
+import styled from "styled-components"
 import "semantic-ui-css/semantic.min.css"
 import "../styles/layout.css"
 
-/* const IndexWrapper = styled.section`
-  margin: 5rem 5rem;
+const IndexWrapper = styled.div`
+  background-image: linear-gradient(#5a4fcf, #9e97e3, #bfbbed, #ffffff);
+  text-align: center;
+  color: white;
+  max-width: 100%;
 
-  div {
-    max-width: 300px;
-    margin: 0 auto;
-    display: block;
+  height: 100vh;
+  a {
+    color: white;
   }
-` */
 
-const IndexPage = () => (
-  <div>
-    <Header />
+  h1 {
+    margin-top: 5rem;
+    font-size: 50px;
+    text-shadow: 1px 1px #5a4fcf;
+  }
+  h2 {
+    font-size: 40px;
+    text-shadow: 1px 1px #5a4fcf;
+  }
 
-    <SEO title="Home" />
+  @media only screen and (max-width: 480px) {
+    h1 {
+      margin-top: 1rem;
+    }
+  }
+`
 
-    {/*  <Image />
+const StyledSocial = styled(SocialHeader)`
+  width: 100%;
+`
 
-      <h1>About Me</h1>
-      <p>
-        I'm a passionate front-end web developer originally from New York City.
-        <br />I enjoy participating in local hackathons and learning new things
-        at tech conferences around the world.
-      </p>
-      <p>
-        In my free time, I love to travel. Interact with the map below to learn
-        countries and participating in tech conferences and hackathons.
-      </p>
-      <p>I speak English and conversational Spanish. </p> */}
-  </div>
-)
+const IndexPage = () => {
+  const data = useStaticQuery(graphql`
+    query {
+      site {
+        siteMetadata {
+          title
+          author
+          subtitle
+          description
+        }
+      }
+    }
+  `)
+  return (
+    <IndexWrapper>
+      <Menu />
+      <h1>{data.site.siteMetadata.title}</h1>
+      <h2>{data.site.siteMetadata.subtitle}</h2>
+      <StyledSocial />
+    </IndexWrapper>
+  )
+}
 
 export default IndexPage
