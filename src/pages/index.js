@@ -2,6 +2,7 @@ import React from "react"
 import Header from "../components/header"
 import SEO from "../components/seo"
 import "semantic-ui-css/semantic.min.css"
+import "../styles/layout.css"
 
 /* const IndexWrapper = styled.section`
   margin: 5rem 5rem;
