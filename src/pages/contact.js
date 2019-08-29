@@ -45,14 +45,15 @@ const ContactPage = () => (
         <input type="hidden" name="form-name" value="contact" />
         <Form.Field>
           <label>Name</label>
-          <input placeholder="Name" required />
+          <input name="name" placeholder="name" required />
         </Form.Field>
         <Form.Field>
           <label>Email</label>
-          <input placeholder="Email" required />
+          <input name="email" placeholder="email" required />
         </Form.Field>
         <Form.Field>
           <Form.TextArea
+            name="message"
             label="Message"
             placeholder="Tell me more..."
             required
