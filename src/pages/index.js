@@ -6,6 +6,7 @@ import styled from "styled-components"
 import "semantic-ui-css/semantic.min.css"
 import "../styles/layout.css"
 
+
 const IndexWrapper = styled.div`
   background-image: linear-gradient(#5a4fcf, #9e97e3, #bfbbed, #ffffff);
   text-align: center;
