@@ -29,7 +29,6 @@ const Layout = ({ children }) => (
     render={data => (
       <>
         <header>
-          <div id="#top" />
           <Menu />
         </header>
         <main>{children}</main>

@@ -6,7 +6,7 @@ import SEO from "../components/seo"
 
 const SuccessPage = () => (
   <Layout>
-    <SEO title="404: Not found" />
+    <SEO title="Form Submitted | Daphne Charles" />
     <h1>Form Submittted!</h1>
     <p>
       Thank you for getting in contact with me. I will get back to you shortly.
