@@ -1,9 +1,11 @@
 import { graphql, useStaticQuery } from "gatsby"
 import React from "react"
-import styled from "styled-components"
-import "semantic-ui-css/semantic.min.css"
 import SocialHeader from "../components/socialheader"
 import Menu from "../components/menu"
+import styled from "styled-components"
+import "semantic-ui-css/semantic.min.css"
+import "../styles/layout.css"
+
 
 const IndexWrapper = styled.div`
   background-image: linear-gradient(#5a4fcf, #9e97e3, #bfbbed, #ffffff);
