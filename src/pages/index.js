@@ -1,5 +1,6 @@
 import { graphql, useStaticQuery } from "gatsby"
 import React from "react"
+import SEO from "../components/seo"
 import styled from "styled-components"
 import "semantic-ui-css/semantic.min.css"
 import SocialHeader from "../components/socialheader"
@@ -52,6 +53,7 @@ const IndexPage = () => {
   `)
   return (
     <IndexWrapper>
+      <SEO title="Home" />
       <Menu />
       <h1>{data.site.siteMetadata.title}</h1>
       <h2>{data.site.siteMetadata.subtitle}</h2>
