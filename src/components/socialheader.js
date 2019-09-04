@@ -4,7 +4,7 @@ import { Icon } from "semantic-ui-react"
 import { Link } from "gatsby"
 
 const StyledSocial = styled.div`
-  margin-top: 2.5rem;
+  margin-top: 4rem;
   .icon {
     margin: 1rem 0.75rem;
   }

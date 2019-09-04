@@ -37,7 +37,7 @@ const ContactPage = () => (
         name="contact"
         method="post"
         data-netlify="true"
-        netlify
+        netlify="true"
         data-netlify-honeypot="bot-field"
         action="/success"
       >
