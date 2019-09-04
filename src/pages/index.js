@@ -7,6 +7,10 @@ import SocialHeader from "../components/socialheader"
 import Menu from "../components/menu"
 import Particles from "react-particles-js"
 
+
+
+
+
 const IndexWrapper = styled.div`
   background-image: linear-gradient(#5a4fcf, #9e97e3, #bfbbed, #ffffff);
   text-align: center;
