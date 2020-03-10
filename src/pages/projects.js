@@ -49,6 +49,43 @@ const SecondPage = () => (
       <StyledCard fluid raised>
         <Card.Content>
           <Image
+            src="https://uploads.codesandbox.io/uploads/user/bc2a21d8-8ea8-4b6e-b38d-3aadd72b62ca/GGr6-amex-card-application.png"
+            wrapped
+            ui={false}
+          />
+
+          <Card.Description>
+            <h2>American Express Card Application</h2>
+            <Card.Meta>
+              <span className="date">December 2019</span>
+            </Card.Meta>
+            <p>
+              Full stack web application built to allow American Express
+              customers to apply for a variety of personal and business cards.
+            </p>
+
+            <h3>
+              <Icon name="code" />
+              Technologies Used:
+            </h3>
+            <p>
+              Angular, React, Node.js, Styled Components, Storybook, HTML, CSS,
+              JavaScript
+            </p>
+            <br />
+            <a
+              href="https://www.americanexpress.com/us/credit-cards/card-application/apply/gold-card/36182-10-0?applyAsProspect=true&pmccode=784&intlink=US-Acq-Shop-Consumer-VAC-CardMember-Apply-GoldCard#/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button>View Project</Button>
+            </a>
+          </Card.Description>
+        </Card.Content>
+      </StyledCard>
+      <StyledCard fluid raised>
+        <Card.Content>
+          <Image
             src="https://uploads.codesandbox.io/uploads/user/bc2a21d8-8ea8-4b6e-b38d-3aadd72b62ca/8H3G-bmw-crm-form.png"
             wrapped
             ui={false}

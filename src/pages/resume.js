@@ -21,13 +21,13 @@ const ResumePage = () => (
       <SEO title="Resume" />
       <h1>Resume</h1>
       <br />
-      <a href="https://raw.githubusercontent.com/daphnecharles/resume/master/Daphne-Charles-CV-Resume-2019.pdf">
+      <a href="https://raw.githubusercontent.com/daphnecharles/resume/master/Daphne-Charles-Resume-CV-2020.pdf">
         <Button className="resume-buttons" icon labelPosition="left">
           <Icon name="file pdf" />
           Download as PDF
         </Button>
       </a>{" "}
-      <a href="https://raw.githubusercontent.com/daphnecharles/resume/master/Daphne-Charles-CV-Resume-2019.docx">
+      <a href="https://raw.githubusercontent.com/daphnecharles/resume/master/Daphne-Charles-Resume-CV-2020.docx">
         <Button className="resume-buttons" icon labelPosition="left">
           <Icon name="file word" />
           Download as DOCX
@@ -40,7 +40,7 @@ const ResumePage = () => (
         className="resume-iframe"
         width="900"
         height="1100"
-        src="https://docs.google.com/gview?url=https://github.com/daphnecharles/resume/raw/master/Daphne-Charles-CV-Resume-2019.pdf&embedded=true"
+        src="https://docs.google.com/gview?url=https://github.com/daphnecharles/resume/raw/master/Daphne-Charles-Resume-CV-2020.pdf&embedded=true"
       />
       {/*  <Card.Group>
         <Card fluid>
