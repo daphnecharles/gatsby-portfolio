@@ -44,12 +44,12 @@ const ContactPage = () => (
         <input type="hidden" name="bot-field" />
         <input type="hidden" name="form-name" value="contact" />
         <Form.Field>
-          <label>Name</label>
-          <input name="name" placeholder="name" required />
+          <label htmlFor="name">Name</label>
+          <input name="name" placeholder="name" id="name" required />
         </Form.Field>
         <Form.Field>
-          <label>Email</label>
-          <input name="email" placeholder="email" required />
+          <label htmlFor="email">Email</label>
+          <input name="email" placeholder="email" id="email" required />
         </Form.Field>
         <Form.Field>
           <Form.TextArea

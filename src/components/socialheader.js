@@ -9,7 +9,7 @@ const StyledSocial = styled.div`
     margin: 1rem 0.75rem;
   }
   i.bordered.inverted.icon {
-    color: #272075 !important;
+    color: #2cc49c!important;
     background-color: white !important;
   }
   i.bordered.inverted.icon:hover {
@@ -27,6 +27,7 @@ const SocialHeader = () => (
       href="https://github.com/daphnecharles"
       target="_blank"
       rel="noopener noreferrer"
+      aria-label="GitHub"
     >
       <Icon bordered circular inverted size="big" name="github" />
     </a>
@@ -34,6 +35,7 @@ const SocialHeader = () => (
       href="https://www.linkedin.com/in/daphneacharles/"
       target="_blank"
       rel="noopener noreferrer"
+      aria-label="LinkedIn"
     >
       <Icon bordered circular inverted size="big" name="linkedin" />
     </a>
@@ -41,10 +43,11 @@ const SocialHeader = () => (
       href="https://twitter.com/Daphachar"
       target="_blank"
       rel="noopener noreferrer"
+      aria-label="Twitter"
     >
       <Icon bordered circular inverted size="big" name="twitter" />
     </a>
-    <Link to="/contact" rel="noopener noreferrer">
+    <Link to="/contact" rel="noopener noreferrer" aria-label="Contact Form">
       <Icon bordered circular inverted size="big" name="mail outline" />
     </Link>
   </StyledSocial>

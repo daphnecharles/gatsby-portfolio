@@ -1,4 +1,4 @@
-import React, { Component } from "react"
+import React from "react"
 import { Icon, Menu } from "semantic-ui-react"
 import styled from "styled-components"
 import { Link } from "gatsby"
@@ -34,18 +34,12 @@ const StyledMenu = styled(Menu)`
   &.ui.icon.menu .item:hover {
     transition: all 0.2s ease-in-out;
     text-decoration: none;
-    color: #272075;
+    color: #2cc49c;
     border: none;
     background-color: white;
-    box-shadow: 2px 5px #272075;
+    box-shadow: 2px 5px #2cc49c;
   }
-  &.ui.icon.menu .item:hover:active {
-    text-decoration: none;
-    color: #272075;
-    border: none;
-    background-color: white;
-    box-shadow: 2px 5px #272075;
-  }
+
   &.ui.menu .item:before {
     background: none;
   }
@@ -61,22 +55,14 @@ const StyledMenu = styled(Menu)`
   }
 `
 
-export default class Nav extends Component {
-  state = {}
-
-  handleItemClick = (e, { name }) => this.setState({ activeItem: name })
-
-  render() {
-    const { activeItem } = this.state
-
+export default function Nav() {
     return (
       <StyledMenu compact icon="labeled">
         <StyledMenu.Item
           as={Link}
           to="/"
           name="home"
-          active={activeItem === "home"}
-          onClick={this.handleItemClick}
+          activeStyle={{ color: "#272075", boxShadow: "2px 5px #2cc49c" }}
         >
           <Icon name="home" />
           <p>Home</p>
@@ -85,8 +71,7 @@ export default class Nav extends Component {
           as={Link}
           to="/projects"
           name="code"
-          active={activeItem === "code"}
-          onClick={this.handleItemClick}
+          activeStyle={{ color: "#272075", boxShadow: "2px 5px #2cc49c" }}
         >
           <Icon name="code" />
           <p>Projects</p>
@@ -95,8 +80,7 @@ export default class Nav extends Component {
           as={Link}
           to="/resume"
           name="briefcase"
-          active={activeItem === "briefcase"}
-          onClick={this.handleItemClick}
+          activeStyle={{ color: "##272075", boxShadow: "2px 5px #2cc49c" }}
         >
           <Icon name="briefcase" />
           <p>Resume</p>
@@ -117,13 +101,11 @@ export default class Nav extends Component {
           as={Link}
           to="/contact"
           name="mail"
-          active={activeItem === "mail"}
-          onClick={this.handleItemClick}
+          activeStyle={{ color: "#2cc49c", boxShadow: "2px 5px #2cc49c" }}
         >
           <Icon name="mail" />
           <p>Contact</p>
         </StyledMenu.Item>
       </StyledMenu>
     )
-  }
 }

@@ -9,7 +9,7 @@ const StyledSocial = styled.div`
     margin: 1rem 0.75rem;
   }
   i.bordered.inverted.icon {
-    color: #272075 !important;
+    color: #2cc49c !important;
     background-color: white !important;
   }
   i.bordered.inverted.icon:hover {

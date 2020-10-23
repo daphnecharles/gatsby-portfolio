@@ -3,6 +3,13 @@ import { Card, Icon, Image, Button } from "semantic-ui-react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import styled from "styled-components"
+import chaincode from '../images/chaincode.png'
+import usavetaxcenter from '../images/usavetaxcenter.png'
+import americanexpress from '../images/americanexpress.png'
+import bmw from '../images/bmw.png'
+import regeneron from '../images/regeneron.png'
+import wanderlustatlas from '../images/wanderlustatlas.png'
+import caccportal from '../images/caccportal.png'
 
 const StyledCard = styled(Card)`
   &&&.ui.card,
@@ -40,7 +47,7 @@ const StyledCard = styled(Card)`
   }
 `
 
-const SecondPage = () => (
+const Projects = () => (
   <Layout>
     <SEO title="Projects" />
     <h1>Projects</h1>
@@ -49,7 +56,7 @@ const SecondPage = () => (
       <StyledCard fluid raised>
         <Card.Content>
           <Image
-            src="https://uploads.codesandbox.io/uploads/user/bc2a21d8-8ea8-4b6e-b38d-3aadd72b62ca/GGr6-amex-card-application.png"
+            src={americanexpress}
             wrapped
             ui={false}
           />
@@ -86,7 +93,7 @@ const SecondPage = () => (
       <StyledCard fluid raised>
         <Card.Content>
           <Image
-            src="https://uploads.codesandbox.io/uploads/user/bc2a21d8-8ea8-4b6e-b38d-3aadd72b62ca/8H3G-bmw-crm-form.png"
+            src={bmw}
             wrapped
             ui={false}
           />
@@ -113,6 +120,79 @@ const SecondPage = () => (
             <br />
             <a
               href="https://content.bmw.com.au/UserFormGeneric/Index?modelRange=&lead_source=&campaign=#/form?modelRange=&lead_source=&campaign="
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button>View Project</Button>
+            </a>
+          </Card.Description>
+        </Card.Content>
+      </StyledCard>
+      <StyledCard fluid raised>
+        <Card.Content>
+          <Image
+            src={chaincode}
+            wrapped
+            ui={false}
+          />
+
+          <Card.Description>
+            <h2>Chaincode Labs</h2>
+            <Card.Meta>
+              <span className="date">June 2020</span>
+            </Card.Meta>
+            <p>
+              Business website and blog for the Bitcoin research company, Chaincode Labs.
+            </p>
+
+            <h3>
+              <Icon name="code" />
+              Technologies Used:
+            </h3>
+            <p>
+              HTML, CSS, Jekyll, Ruby, Liquid, Markdown, Visual
+              Studio Code, GitHub
+            </p>
+            <br />
+            <a
+              href="https://chaincode.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button>View Project</Button>
+            </a>
+          </Card.Description>
+        </Card.Content>
+      </StyledCard>
+
+      <StyledCard fluid raised>
+        <Card.Content>
+          <Image
+            src={usavetaxcenter}
+            wrapped
+            ui={false}
+          />
+
+          <Card.Description>
+            <h2>U-Save Tax Center</h2>
+            <Card.Meta>
+              <span className="date">January 2020</span>
+            </Card.Meta>
+            <p>
+              Business website with headless CMS for the tax accounting company, U-Save Tax Center.
+            </p>
+
+            <h3>
+              <Icon name="code" />
+              Technologies Used:
+            </h3>
+            <p>
+              HTML, CSS, JavaScript, Gatsby, Netlify CMS, Stackbit, Visual
+              Studio Code, GitHub
+            </p>
+            <br />
+            <a
+              href="https://www.u-savetaxcenter.com/"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -151,7 +231,7 @@ const SecondPage = () => (
             </a>
           </Card.Description>
           <Image
-            src="https://uploads.codesandbox.io/uploads/user/bc2a21d8-8ea8-4b6e-b38d-3aadd72b62ca/YN4N-regeneron-talenthub.png"
+            src={regeneron}
             wrapped
             ui={false}
           />
@@ -183,13 +263,6 @@ const SecondPage = () => (
             </h3>
             <p>WordPress, Astra Child Theme, Elementor, MailChimp</p>
             <br />
-            <a
-              href="http://connectedafrica.org.za/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Button>View Project</Button>
-            </a>
           </Card.Description>
         </Card.Content>
       </StyledCard>
@@ -221,7 +294,7 @@ const SecondPage = () => (
             </a>
           </Card.Description>
           <Image
-            src="https://uploads.codesandbox.io/uploads/user/bc2a21d8-8ea8-4b6e-b38d-3aadd72b62ca/9l-R-rutgers-cacc-portal.png"
+            src={caccportal}
             wrapped
             ui={false}
           />
@@ -230,7 +303,7 @@ const SecondPage = () => (
       <StyledCard fluid raised>
         <Card.Content>
           <Image
-            src="https://uploads.codesandbox.io/uploads/user/bc2a21d8-8ea8-4b6e-b38d-3aadd72b62ca/lt5P-wanderlust-map.png"
+            src={wanderlustatlas}
             wrapped
             ui={false}
           />
@@ -269,4 +342,4 @@ const SecondPage = () => (
   </Layout>
 )
 
-export default SecondPage
+export default Projects
