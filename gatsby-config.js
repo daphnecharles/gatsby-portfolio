@@ -7,6 +7,7 @@ module.exports = {
     subtitle: `I'm a Full Stack Software Engineer based in NYC.`,
     description: `Portfolio Website for Daphne Charles`,
     author: `Daphne Charles`,
+    siteUrl: "https://daphne.codes/"
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
