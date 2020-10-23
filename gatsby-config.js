@@ -32,8 +32,6 @@ module.exports = {
         path: `${__dirname}/src/`,
       },
     },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-transformer-remark`,
       options: {
@@ -47,18 +45,6 @@ module.exports = {
             },
           },
         ],
-      },
-    },
-    {
-      resolve: `gatsby-plugin-manifest`,
-      options: {
-        name: `DaphneCharles`,
-        short_name: `DaphneCharles`,
-        start_url: `/`,
-        background_color: `#FFFFFF`,
-        theme_color: `#FFFFFF`,
-        display: `minimal-ui`,
-        icon: `src/images/favicon.png`,
       },
     },
     {
